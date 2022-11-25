@@ -229,7 +229,7 @@ body {
   background-color: var(--pokemon_fairy);
 }
 
-/*celular*/
+/*celular grande/ tablet médio*/
 @media screen and (min-width: 380px) {
   .title {
     font-size: 2rem;
@@ -262,7 +262,7 @@ body {
   }
 }
 
-/*tablet*/
+/*tablet grande/ monitor pequeno*/
 @media screen and (min-width: 576px) {
   .content {
     max-width: 992px;
