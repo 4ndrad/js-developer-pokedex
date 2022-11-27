@@ -40,7 +40,7 @@
 
 .attacks li {
   list-style: none;
-  background-image: linear-gradient(to right, #EF5350, #e53835e1);
+  background-image: linear-gradient(to right,#ea6e6e, #EF5350, #e53835f3);
   padding: 0.3rem;
   border-radius: 1rem;
   font-size: 0.65rem;
