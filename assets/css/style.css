@@ -45,8 +45,14 @@ body {
 
 .divTitle {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+
+.divTitle img{
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 10px;
 }
 
 .title {
