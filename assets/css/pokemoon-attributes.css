@@ -40,13 +40,13 @@
 
 .attacks li {
   list-style: none;
-  background-image: linear-gradient(to right,#ea6e6e, #EF5350, #e53835f3);
+  background-color: rgba(255, 0, 0, 0.716);
   padding: 0.3rem;
   border-radius: 1rem;
   font-size: 0.65rem;
   font-weight: bold;
   text-align: center;
-  border: solid rgba(0, 0, 0, 0.681) .5px;
+  border: solid rgba(0, 0, 0, 0.681) 1px;
 }
 
 .attributes ul {

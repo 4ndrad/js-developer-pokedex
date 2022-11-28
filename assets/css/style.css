@@ -147,8 +147,7 @@ body {
   border:none;
   border-radius: 1rem;
   font-size: 0.625rem;
-  text-transform: uppercase;
-  text-shadow: .5px .5px #000;
+  font-weight: bold;
   letter-spacing: 2px;
 }
 

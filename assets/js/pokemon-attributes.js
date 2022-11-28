@@ -9,7 +9,7 @@ function convertPokemonToLiAttributes(pokemon) {
         <span class="name">${pokemon.name}</span>
             <div>
                 <ul class="types displayFlex">
-                    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                   ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                 </ul>
             </div>
             <div class="imgPokemon">
@@ -21,7 +21,7 @@ function convertPokemonToLiAttributes(pokemon) {
             </div>
             <div class="attacks">
                 <ul>
-                ${pokemon.attacks.map((attacks) => `<li>${attacks}</li>`).join('')}
+                ${pokemon.attacks.map((attacks) => ` <li>${attacks}</li>`).join('')}
                 </ul>
             </div>
             <div class="attributes">
