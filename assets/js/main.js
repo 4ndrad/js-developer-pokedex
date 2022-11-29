@@ -4,7 +4,7 @@ const loadMoreButton = document.getElementById('loadMoreButton');
 var offset = 0;
 var limit = 9;
 
-function loadPokemonItens(offset, limit){
+function loadPokemonItens(offset, limit) {
     pokemonAPI.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map((convertPokemonToLi)).join('')
         pokemonList.innerHTML += newHtml
@@ -32,8 +32,8 @@ function convertPokemonToLi(pokemon) {
   `
 }
 
-function pokemonsAttributes(){
-    pokemonAPI.getPokemons(offset,limit).then((pokemons = []) => {
+function pokemonsAttributes() {
+    pokemonAPI.getPokemons(offset, limit).then((pokemons = []) => {
         console.log(window.location.hash)
         if (window.location.hash == '') {
             location.reload(true)
@@ -53,12 +53,12 @@ function pokemonsAttributes(){
 function convertPokemonToLiAttributes(pokemon) {
     return ` 
     <section class="contentAttributes pokemon ${pokemon.type} pokemonAttributes">
-       <a class="returnInicial" href=""><i class="fa-solid fa-arrow-left"></i></a>
-        <span class="number">#${pokemon.number}</span>
-        <span class="name">${pokemon.name}</span>
+            <a class="returnInicial" href=""><i class="fa-solid fa-arrow-left"></i></a>
+            <span class="number">#${pokemon.number}</span>
+            <span class="name">${pokemon.name}</span>
             <div>
                 <ul class="types displayFlex">
-                   ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                 </ul>
             </div>
             <div class="imgPokemon">
@@ -70,7 +70,7 @@ function convertPokemonToLiAttributes(pokemon) {
             </div>
             <div class="attacks">
                 <ul>
-                ${pokemon.attacks.map((attacks) => ` <li>${attacks}</li>`).join('')}
+                    attacks: ${pokemon.attacks.map((attacks) => ` <li>${attacks}</li>`).join('')}
                 </ul>
             </div>
             <div class="attributes">
@@ -83,7 +83,6 @@ function convertPokemonToLiAttributes(pokemon) {
                     </div>
                 </ul>
             </div>
-        
     </section>
   `
 }

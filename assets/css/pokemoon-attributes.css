@@ -21,7 +21,11 @@
 
 .displayFlex {
   display: flex;
-  justify-content: space-around;
+  justify-content: initial;
+}
+
+.displayFlex li{
+  margin-right: 10px;
 }
 
 .imgPokemon {
@@ -40,18 +44,23 @@
   justify-content: space-around;
   padding: 0;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-.attacks li {
-  list-style: none;
-  background-color: rgba(255, 0, 0, 0.716);
+.attacks {
+  color: #000;
   padding: 0.3rem;
-  border-radius: 1rem;
   font-size: 9.3px;
   font-weight: bold;
-  text-align: center;
-  border: solid rgba(0, 0, 0, 0.681) 1px;
+  text-transform: capitalize;
+}
+
+.attacks li{
+  list-style: none;
+  text-transform: lowercase;
+  background-color: rgba(255, 255, 255, 0.474);
+  padding: 0.313rem .188rem;
+  border-radius: .5rem;
 }
 
 .attributes ul {
