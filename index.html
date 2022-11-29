@@ -4,20 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/icon/icon-pokedex-sem-fundo.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/pokemoon-attributes.css">
+    <script src="https://kit.fontawesome.com/d0c7bb4d64.js" crossorigin="anonymous"></script>
     <title>Pokédex</title>
   </head>
   <body>
-    <section class="content">
+    <section id="content" class="content" >
       <div class="divTitle">
-        <img src="assets/icon/icon-pokedex-sem-fundo.png" alt="icon-pokedex-sem-fundo">
+        <img
+          src="assets/icon/icon-pokedex-sem-fundo.png"
+          alt="icon-pokedex-sem-fundo"
+        />
         <h1 class="title">Pokédex</h1>
       </div>
+
+      <!--<div>
+        <input
+          id="searchbar"
+          onkeyup="search_animal()"
+          type="text"
+          name="search"
+          placeholder="Search pokemon"
+        />
+      </div>-->
 
       <ol id="pokemonList" class="pokemons"></ol>
 
       <div class="pagination">
-        <button id="loadMoreButton"  class="btnPagination" type="button">Load more</button>
+        <button id="loadMoreButton" class="btnPagination" type="button">
+          Load more
+        </button>
       </div>
     </section>
 
