@@ -37,7 +37,7 @@ body {
   background-size: contain;
 }
 
-a, a:hover, a:visited, :active   {
+a, a:hover, a:visited{
   text-decoration: none;
 }
 
@@ -154,6 +154,7 @@ a, a:hover, a:visited, :active   {
   font-size: 0.625rem;
   font-weight: bold;
   letter-spacing: 2px;
+  border: rgba(0, 0, 0, 0.562) double 4px;
 }
 
 .btnPagination:hover {
@@ -299,7 +300,7 @@ a, a:hover, a:visited, :active   {
   }
 
   .pokemon {
-    background-size: 180px;
+    background-size: 140px;
     background-position: right;
   }
 }
