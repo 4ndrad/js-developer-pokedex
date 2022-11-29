@@ -4,11 +4,11 @@ const loadMoreButton = document.getElementById('loadMoreButton');
 var offset = 0;
 var limit = 9;
 
-function loadPokemonItens(offset, limit) {
+async function loadPokemonItens(offset, limit) {
     pokemonAPI.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map((convertPokemonToLi)).join('')
         pokemonList.innerHTML += newHtml
-    })
+    },2000 )
 }
 
 function convertPokemonToLi(pokemon) {
@@ -32,7 +32,7 @@ function convertPokemonToLi(pokemon) {
   `
 }
 
-function pokemonsAttributes() {
+async function pokemonsAttributes() {
     pokemonAPI.getPokemons(offset, limit).then((pokemons = []) => {
         console.log(window.location.hash)
         if (window.location.hash == '') {
@@ -47,7 +47,7 @@ function pokemonsAttributes() {
 
         const attributes = pokemonFilter.map((convertPokemonToLiAttributes)).join('')
         content.innerHTML = attributes
-    })
+    },2000 )
 }
 
 function convertPokemonToLiAttributes(pokemon) {
